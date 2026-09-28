@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameVault | Games</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                GAME<span>VAULT</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="games.html#explore-games">Categories</a></li>
+                <li><a href="index.html#deals">Deals</a></li>
+            </ul>
+
+            <div class="nav-actions">
+
+                <select class="currency-selector" id="currencySelector">
+                    <option value="USD">$ USD</option>
+                    <option value="NGN">₦ NGN</option>
+                    <option value="EUR">€ EUR</option>
+                    <option value="GBP">£ GBP</option>
+                </select>
+
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="gameSearch"
+                        placeholder="SEARCH GAMES..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        class="search-btn"
+                        id="searchBtn"
+                        type="button"
+                    >
+                        ⌕
+                    </button>
+
+                    <div
+                        class="search-results"
+                        id="searchResults"
+                    ></div>
+                </div>
+
+                <a href="cart.html" class="cart-btn">
+                    🛒 <span>0</span>
+                </a>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- PAGE HERO -->
+        <section class="hero games-hero">
+
+            <div class="hero-content">
+
+                <p class="hero-label">GAMEVAULT LIBRARY</p>
+
+                <h1>
+                    FIND YOUR
+                    <span>NEXT GAME.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Explore our collection of action, RPG, racing,
+                    adventure, sports and horror games.
+                </p>
+
+            </div>
+
+            <div class="games-hero-visual"></div>
+
+        </section>
+
+
+        <!-- GAMES -->
+        <section id="explore-games" class="section games-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">EXPLORE</p>
+                    <h2>ALL GAMES</h2>
+                </div>
+
+            </div>
+
+
+            <!-- CATEGORY FILTERS -->
+            <div class="category-filters">
+
+                <button class="filter-btn active">
+                    ALL
+                </button>
+
+                <button class="filter-btn">
+                    ACTION
+                </button>
+
+                <button class="filter-btn">
+                    RPG
+                </button>
+
+                <button class="filter-btn">
+                    RACING
+                </button>
+
+                <button class="filter-btn">
+                    ADVENTURE
+                </button>
+
+                <button class="filter-btn">
+                    SPORTS
+                </button>
+
+                <button class="filter-btn">
+                    HORROR
+                </button>
+
+            </div>
+
+
+            <!-- GAME GRID -->
+            <div class="game-grid">
+
+                <!-- SHADOW PROTOCOL -->
+                <article class="game-card">
+
+                    <div class="game-image">
+                        <img src="shadow-protocol.JPEG" alt="Shadow Protocol">
+                        <span class="game-tag">NEW</span>
+                        <span class="game-overlay">VIEW GAME</span>
+                    </div>
+
+                    <div class="game-info">
+
+                        <p class="game-category">ACTION</p>
+
+                        <h3>Shadow Protocol</h3>
+
+                        <p class="game-price">$19.99</p>
+
+                        <button
+                            class="add-cart-btn"
+                            data-game="Shadow Protocol"
+                            data-price="19.99"
+                        >
+                            ADD TO CART
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- REALM OF LEGENDS -->
+                <article class="game-card">
+
+                    <div class="game-image game-image-2">
+                        <img src="realm-of-legends.JPEG" alt="Realm of Legends">
+                        <span class="game-tag">HOT</span>
+                        <span class="game-overlay">VIEW GAME</span>
+                    </div>
+
+                    <div class="game-info">
+
+                        <p class="game-category">RPG</p>
+
+                        <h3>Realm of Legends</h3>
+
+                        <p class="game-price">$24.99</p>
+
+                        <button
+                            class="add-cart-btn"
+                            data-game="Realm of Legends"
+                            data-price="24.99"
+                        >
+                            ADD TO CART
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- LOST HORIZON -->
+                <article class="game-card">
+
+                    <div class="game-image game-image-3">
+                        <img src="lost-horizon.JPEG" alt="Lost Horizon">
+                        <span class="game-overlay">VIEW GAME</span>
+                    </div>
+
+                    <div class="game-info">
+
+                        <p class="game-category">ADVENTURE</p>
+
+                        <h3>Lost Horizon</h3>
+
+                        <p class="game-price">$17.99</p>
+
+                        <button
+                            class="add-cart-btn"
+                            data-game="Lost Horizon"
+                            data-price="17.99"
+                        >
+                            ADD TO CART
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- VELOCITY X -->
+                <article class="game-card">
+
+                    <div class="game-image game-image-4">
+                        <img src="velocity-x.JPEG" alt="Velocity X">
+                        <span class="game-overlay">VIEW GAME</span>
+                    </div>
+
+                    <div class="game-info">
+
+                        <p class="game-category">RACING</p>
+
+                        <h3>Velocity X</h3>
+
+                        <p class="game-price">$14.99</p>
+
+                        <button
+                            class="add-cart-btn"
+                            data-game="Velocity X"
+                            data-price="14.99"
+                        >
+                            ADD TO CART
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- DARK DESCENT -->
+                <article class="game-card">
+
+                    <div class="game-image game-image-5">
+                        <img src="dark-descent.JPEG" alt="Dark Descent">
+                        <span class="game-overlay">VIEW GAME</span>
+                    </div>
+
+                    <div class="game-info">
+
+                        <p class="game-category">HORROR</p>
+
+                        <h3>Dark Descent</h3>
+
+                        <p class="game-price">$13.99</p>
+
+                        <button
+                            class="add-cart-btn"
+                            data-game="Dark Descent"
+                            data-price="13.99"
+                        >
+                            ADD TO CART
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ULTIMATE FOOTBALL -->
+                <article class="game-card">
+
+                    <div class="game-image game-image-6">
+                        <img src="ultimate-football.JPEG" alt="Ultimate Football">
+                        <span class="game-overlay">VIEW GAME</span>
+                    </div>
+
+                    <div class="game-info">
+
+                        <p class="game-category">SPORTS</p>
+
+                        <h3>Ultimate Football</h3>
+
+                        <p class="game-price">$11.99</p>
+
+                        <button
+                            class="add-cart-btn"
+                            data-game="Ultimate Football"
+                            data-price="11.99"
+                        >
+                            ADD TO CART
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <a href="index.html" class="logo">
+                    GAME<span>VAULT</span>
+                </a>
+
+                <p>
+                    Your gateway to unforgettable gaming experiences.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>EXPLORE</h4>
+
+                <a href="games.html">Games</a>
+                <a href="games.html#explore-games">Categories</a>
+                <a href="index.html#deals">Deals</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>SUPPORT</h4>
+
+                <a href="#">Contact</a>
+                <a href="#">FAQ</a>
+                <a href="#">Privacy</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 GAMEVAULT. ALL RIGHTS RESERVED.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

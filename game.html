@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Game Details | GameVault</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header>
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                GAME<span>VAULT</span>
+            </a>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+
+                <li>
+                    <a href="games.html">GAMES</a>
+                </li>
+
+                <li>
+                    <a href="games.html#explore-games">
+                        CATEGORIES
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#deals">DEALS</a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="gameSearch"
+                        placeholder="SEARCH GAMES..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        class="search-btn"
+                        id="searchBtn"
+                        type="button"
+                    >
+                        ⌕
+                    </button>
+
+                    <div
+                        class="search-results"
+                        id="searchResults"
+                    ></div>
+
+                </div>
+
+                <select
+                    id="currencySelector"
+                    class="currency-selector"
+                >
+                    <option value="USD">USD</option>
+                    <option value="NGN">NGN</option>
+                    <option value="GBP">GBP</option>
+                    <option value="EUR">EUR</option>
+                </select>
+
+                <a href="cart.html" class="cart-btn">
+                    🛒 <span>0</span>
+                </a>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- =========================
+         GAME DETAILS
+    ========================== -->
+
+    <main>
+
+        <section class="section game-details-section">
+
+            <div
+                class="game-details"
+                id="gameDetails"
+            >
+
+                <!-- JavaScript will load the selected game here -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <a href="index.html" class="logo">
+                    GAME<span>VAULT</span>
+                </a>
+
+                <p>
+                    Your digital destination for
+                    premium games and unforgettable
+                    gaming experiences.
+                </p>
+            </div>
+
+            <div>
+                <h4>QUICK LINKS</h4>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="games.html">
+                    Games
+                </a>
+
+                <a href="games.html#explore-games">
+                    Categories
+                </a>
+
+                <a href="index.html#deals">
+                    Deals
+                </a>
+            </div>
+
+            <div>
+                <h4>SUPPORT</h4>
+
+                <a href="#">
+                    Help Center
+                </a>
+
+                <a href="#">
+                    Contact
+                </a>
+
+                <a href="#">
+                    Terms
+                </a>
+
+                <a href="#">
+                    Privacy
+                </a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 GAMEVAULT. ALL RIGHTS RESERVED.
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

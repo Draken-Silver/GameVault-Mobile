@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>GameVault | Order Confirmed</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <!-- =========================
+     PAYMENT SUCCESS POPUP
+========================= -->
+
+<div
+    id="paymentSuccessPopup"
+    class="payment-success-popup"
+>
+
+    <div class="payment-success-box">
+
+        <div class="payment-success-icon">
+            ✓
+        </div>
+
+        <p class="section-label">
+            GAMEVAULT PAYMENT
+        </p>
+
+        <h2>
+            PAYMENT SUCCESSFUL.
+        </h2>
+
+        <p class="payment-success-message">
+            Your payment has been verified and
+            your order is confirmed.
+        </p>
+
+        <button
+            type="button"
+            id="closePaymentSuccess"
+        >
+            CONTINUE
+        </button>
+
+    </div>
+
+</div>
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <a
+                href="index.html"
+                class="logo"
+            >
+                GAME<span>VAULT</span>
+            </a>
+
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="games.html">
+                        Games
+                    </a>
+                </li>
+
+                <li>
+                    <a href="games.html#explore-games">
+                        Categories
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#deals">
+                        Deals
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <div class="nav-actions">
+
+                <select
+                    class="currency-selector"
+                    id="currencySelector"
+                >
+
+                    <option value="USD">
+                        $ USD
+                    </option>
+
+                    <option value="NGN">
+                        ₦ NGN
+                    </option>
+
+                    <option value="EUR">
+                        € EUR
+                    </option>
+
+                    <option value="GBP">
+                        £ GBP
+                    </option>
+
+                </select>
+
+
+                <button class="search-btn">
+                    ⌕
+                </button>
+
+
+                <a
+                    href="cart.html"
+                    class="cart-btn"
+                >
+                    🛒
+                    <span>0</span>
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         ORDER CONFIRMATION
+    ========================= -->
+
+    <main>
+
+        <section class="section order-confirmation-section">
+
+            <div class="order-confirmation">
+
+
+                <p class="section-label">
+                    GAMEVAULT ORDER
+                </p>
+
+
+                <h1>
+                    ORDER
+                    <span>CONFIRMED.</span>
+                </h1>
+
+
+                <p class="order-confirmation-message">
+                    Your payment has been successfully
+                    verified. Thank you for your purchase.
+                </p>
+
+
+                <!-- =========================
+                     ORDER DETAILS
+                ========================= -->
+
+                <div class="order-details-card">
+
+                    <div class="order-card-heading">
+
+                        <div>
+
+                            <p class="section-label">
+                                PAYMENT STATUS
+                            </p>
+
+                            <h2>
+                                COMPLETED
+                            </h2>
+
+                        </div>
+
+
+                        <div class="order-status-badge">
+                            PAID
+                        </div>
+
+                    </div>
+
+
+                    <div class="order-divider"></div>
+
+
+                    <div class="order-info-grid">
+
+                        <div>
+
+                            <span>
+                                CUSTOMER
+                            </span>
+
+                            <strong id="orderCustomer">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                EMAIL
+                            </span>
+
+                            <strong id="orderEmail">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                TRANSACTION
+                            </span>
+
+                            <strong id="orderTxRef">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                TOTAL
+                            </span>
+
+                            <strong id="orderTotal">
+                                —
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="order-divider"></div>
+
+
+                    <!-- =========================
+                         PURCHASED GAMES
+                    ========================= -->
+
+                    <div class="order-games">
+
+                        <p class="section-label">
+                            YOUR PURCHASE
+                        </p>
+
+                        <div id="orderItems">
+
+                            <!-- Items inserted by JavaScript -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     ACTIONS
+                ========================= -->
+
+                <div class="order-actions">
+
+                    <a
+                        href="games.html"
+                        class="primary-btn"
+                    >
+                        CONTINUE SHOPPING
+                    </a>
+
+
+                    <a
+                        href="index.html"
+                        class="secondary-btn"
+                    >
+                        BACK TO HOME
+                    </a>
+
+                </div>
+
+
+                <p class="order-note">
+                    Your purchase information has been
+                    recorded successfully.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    GAME<span>VAULT</span>
+                </a>
+
+                <p>
+                    Your gateway to unforgettable
+                    gaming experiences.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    EXPLORE
+                </h4>
+
+                <a href="games.html">
+                    Games
+                </a>
+
+                <a href="games.html#explore-games">
+                    Categories
+                </a>
+
+                <a href="index.html#deals">
+                    Deals
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    SUPPORT
+                </h4>
+
+                <a href="#">
+                    Contact
+                </a>
+
+                <a href="#">
+                    FAQ
+                </a>
+
+                <a href="#">
+                    Privacy
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 GAMEVAULT. ALL RIGHTS RESERVED.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+<script>
+
+    async function loadOrderConfirmation() {
+
+        const params =
+            new URLSearchParams(
+                window.location.search
+            );
+
+        const txRef =
+            params.get("txRef");
+
+        if (!txRef) {
+            return;
+        }
+
+        try {
+
+            const response =
+                await fetch(
+                    `http://localhost:3000/api/order/${encodeURIComponent(txRef)}`
+                );
+
+            const data =
+                await response.json();
+
+            if (
+                !response.ok ||
+                data.status !== "success"
+            ) {
+
+                throw new Error(
+                    data.message ||
+                    "Unable to load order."
+                );
+
+            }
+
+            const order =
+    data.order;
+
+
+// =========================
+// SHOW PAYMENT SUCCESS POPUP
+// =========================
+
+const paymentSuccessPopup =
+    document.getElementById(
+        "paymentSuccessPopup"
+    );
+
+const closePaymentSuccess =
+    document.getElementById(
+        "closePaymentSuccess"
+    );
+
+if (paymentSuccessPopup) {
+
+    paymentSuccessPopup.classList.add(
+        "active"
+    );
+
+}
+
+if (closePaymentSuccess) {
+
+    closePaymentSuccess.addEventListener(
+        "click",
+        () => {
+
+            paymentSuccessPopup.classList.remove(
+                "active"
+            );
+
+        }
+    );
+
+}
+
+
+// Clear cart after verified successful payment
+localStorage.removeItem("gameVaultCart");
+
+
+            // Customer
+            document.getElementById(
+                "orderCustomer"
+            ).textContent =
+                order.name;
+
+
+            // Email
+            document.getElementById(
+                "orderEmail"
+            ).textContent =
+                order.email;
+
+
+            // Transaction
+            document.getElementById(
+                "orderTxRef"
+            ).textContent =
+                order.tx_ref;
+
+
+            // Total
+            document.getElementById(
+                "orderTotal"
+            ).textContent =
+                `${order.currency} ${Number(
+                    order.amount
+                ).toLocaleString()}`;
+
+
+            // Purchased games
+            const orderItems =
+                document.getElementById(
+                    "orderItems"
+                );
+
+            orderItems.innerHTML = "";
+
+            order.items.forEach(item => {
+
+                const itemElement =
+                    document.createElement("div");
+
+                itemElement.className =
+                    "order-item";
+
+                itemElement.innerHTML = `
+
+                    <span>
+                        ${item.name}
+                    </span>
+
+                    <strong>
+                        × ${item.quantity || 1}
+                    </strong>
+
+                `;
+
+                orderItems.appendChild(
+                    itemElement
+                );
+
+            });
+
+
+        } catch (error) {
+
+            console.error(
+                "Order loading error:",
+                error
+            );
+
+        }
+
+    }
+
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        loadOrderConfirmation
+    );
+
+</script>
+
+</body>
+
+</html>

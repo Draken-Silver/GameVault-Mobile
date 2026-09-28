@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault | Your Gaming Universe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+
+        <nav class="navbar">
+
+            <a href="index.html" class="logo">
+                GAME<span>VAULT</span>
+            </a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="games.html">
+                        Games
+                    </a>
+                </li>
+
+                <li>
+                    <a href="games.html#explore-games">
+                        Categories
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#deals">
+                        Deals
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="nav-actions">
+
+                <select class="currency-selector" id="currencySelector">
+
+                    <option value="USD">
+                        $ USD
+                    </option>
+
+                    <option value="NGN">
+                        ₦ NGN
+                    </option>
+
+                    <option value="EUR">
+                        € EUR
+                    </option>
+
+                    <option value="GBP">
+                        £ GBP
+                    </option>
+
+                </select>
+
+
+                <!-- SEARCH -->
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="gameSearch"
+                        placeholder="SEARCH GAMES..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        class="search-btn"
+                        id="searchBtn"
+                        type="button"
+                    >
+                        ⌕
+                    </button>
+
+                    <div
+                        class="search-results"
+                        id="searchResults"
+                    ></div>
+
+                </div>
+
+
+                <a href="cart.html" class="cart-btn">
+                    🛒 <span>0</span>
+                </a>
+
+            </div>
+
+            <button
+    type="button"
+    class="mobile-menu-btn"
+    id="mobileMenuBtn"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+>
+    ☰
+</button>
+
+<div
+    class="mobile-menu"
+    id="mobileMenu"
+>
+    <a href="index.html">Home</a>
+    <a href="games.html">Games</a>
+    <a href="games.html#explore-games">Categories</a>
+    <a href="index.html#deals">Deals</a>
+</div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+
+            <!-- HERO CONTENT -->
+            <div class="hero-content">
+
+                <p class="hero-label">
+                    WELCOME TO GAMEVAULT
+                </p>
+
+
+                <h1>
+                    ENTER YOUR
+                    <span>GAME UNIVERSE.</span>
+                </h1>
+
+
+                <p class="hero-description">
+                    Discover new worlds, legendary adventures and
+                    unforgettable gaming experiences.
+                </p>
+
+
+                <!-- HERO BUTTONS -->
+                <div class="hero-buttons">
+
+
+                    <!-- EXPLORE GAMES -->
+                    <a
+                        href="games.html"
+                        class="btn primary-btn"
+                    >
+
+                        <svg
+                            class="hero-btn-icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                        >
+
+                            <path
+                                d="M7 8.5C4.24 8.5 2 11.74 2 15.5C2 18.26 3.34 20 5.2 20C6.58 20 7.36 19.05 8.25 18H15.75C16.64 19.05 17.42 20 18.8 20C20.66 20 22 18.26 22 15.5C22 11.74 19.76 8.5 17 8.5C15.55 8.5 14.5 9 13.5 9.5H10.5C9.5 9 8.45 8.5 7 8.5Z"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+
+                            <path
+                                d="M6 13V17"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                            />
+
+                            <path
+                                d="M4 15H8"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                            />
+
+                            <circle
+                                cx="17"
+                                cy="14"
+                                r="1"
+                                fill="currentColor"
+                            />
+
+                            <circle
+                                cx="19"
+                                cy="16"
+                                r="1"
+                                fill="currentColor"
+                            />
+
+                        </svg>
+
+                        <span>
+                            EXPLORE GAMES
+                        </span>
+
+                    </a>
+
+
+                    <!-- VIEW DEALS -->
+                    <a
+                        href="#deals"
+                        class="btn secondary-btn"
+                    >
+
+                        <svg
+                            class="hero-btn-icon"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true"
+                        >
+
+                            <path
+                                d="M20.59 13.41L13.41 20.59C12.63 21.37 11.37 21.37 10.59 20.59L3.41 13.41C3.03 13.03 2.82 12.52 2.82 11.99V5C2.82 3.9 3.72 3 4.82 3H11.81C12.34 3 12.85 3.21 13.23 3.59L20.59 10.95C21.37 11.73 21.37 12.99 20.59 13.41Z"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+
+                            <circle
+                                cx="7.5"
+                                cy="7.5"
+                                r="1.5"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                            />
+
+                        </svg>
+
+                        <span>
+                            VIEW DEALS
+                        </span>
+
+                    </a>
+
+                </div>
+
+
+                <!-- HERO TAGLINE -->
+                <div class="hero-tagline">
+
+                    <span class="hero-tagline-line"></span>
+
+                    <span>
+                        GAMES BEYOND LIMITS
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+            <div class="hero-visual">
+
+                <div class="hero-visual-glow"></div>
+
+                <div class="hero-visual-image"></div>
+
+                <div class="hero-visual-card">
+
+                    <span class="hero-card-label">
+                        GAMEVAULT
+                    </span>
+
+                    <h3>
+                        MORE THAN GAMES.
+                        <span>A BIGGER WORLD.</span>
+                    </h3>
+
+                    <div class="hero-card-line"></div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- FEATURED GAMES -->
+        <section class="section featured">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        HANDPICKED
+                    </p>
+
+                    <h2>
+                        FEATURED GAMES
+                    </h2>
+
+                </div>
+
+                <a
+                    href="games.html"
+                    class="view-all"
+                >
+                    VIEW ALL →
+                </a>
+
+            </div>
+
+
+            <div class="game-grid">
+
+
+                <!-- SHADOW PROTOCOL -->
+                <article class="game-card">
+
+                    <div class="game-image">
+
+                        <img
+                            src="shadow-protocol.JPEG"
+                            alt="Shadow Protocol"
+                        >
+
+                        <span class="game-tag">
+                            NEW
+                        </span>
+
+                        <span class="game-overlay">
+                            VIEW GAME
+                        </span>
+
+                    </div>
+
+                    <div class="game-info">
+
+                        <p class="game-category">
+                            ACTION
+                        </p>
+
+                        <h3>
+                            Shadow Protocol
+                        </h3>
+
+                        <p class="game-price">
+                            $19.99
+                        </p>
+
+                        <div class="game-rating">
+                            <span class="star">★</span>
+                            <span>4.8 (1.2K)</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- REALM OF LEGENDS -->
+                <article class="game-card">
+
+                    <div class="game-image game-image-2">
+
+                        <img
+                            src="realm-of-legends.JPEG"
+                            alt="Realm of Legends"
+                        >
+
+                        <span class="game-tag">
+                            HOT
+                        </span>
+
+                        <span class="game-overlay">
+                            VIEW GAME
+                        </span>
+
+                    </div>
+
+                    <div class="game-info">
+
+                        <p class="game-category">
+                            RPG
+                        </p>
+
+                        <h3>
+                            Realm of Legends
+                        </h3>
+
+                        <p class="game-price">
+                            $24.99
+                        </p>
+
+                        <div class="game-rating">
+                            <span class="star">★</span>
+                            <span>4.9 (2.1K)</span>
+                        </div>
+
+
+                    </div>
+
+                </article>
+
+
+                <!-- LOST HORIZON -->
+                <article class="game-card">
+
+                    <div class="game-image game-image-3">
+
+                        <img
+                            src="lost-horizon.JPEG"
+                            alt="Lost Horizon"
+                        >
+
+                        <span class="game-overlay">
+                            VIEW GAME
+                        </span>
+
+                    </div>
+
+                    <div class="game-info">
+
+                        <p class="game-category">
+                            ADVENTURE
+                        </p>
+
+                        <h3>
+                            Lost Horizon
+                        </h3>
+
+                        <p class="game-price">
+                            $17.99
+                        </p>
+
+                        <div class="game-rating">
+                            <span class="star">★</span>
+                            <span>4.7 (980)</span>
+                        </div>
+
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIES -->
+        <section class="section categories">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        FIND YOUR NEXT ADVENTURE
+                    </p>
+
+                    <h2>
+                        BROWSE BY GENRE
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="category-grid">
+
+
+                <!-- ACTION -->
+                <a
+                    href="games.html?category=action"
+                    class="category-card"
+                >
+
+                    <div class="category-content">
+
+                        <span class="category-icon action-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                aria-hidden="true"
+                            >
+
+                                <path
+                                    d="M6 4L20 18"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+
+                                <path
+                                    d="M18 4L4 18"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+
+                                <path
+                                    d="M8 6L5 3M16 18L19 21M18 6L21 3M6 18L3 21"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+
+                            </svg>
+
+                        </span>
+
+                        <h3>
+                            Action
+                        </h3>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- RPG -->
+                <a
+                    href="games.html?category=rpg"
+                    class="category-card"
+                >
+
+                    <div class="category-content">
+
+                        <span class="category-icon rpg-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                aria-hidden="true"
+                            >
+
+                                <path
+                                    d="M12 3L4 10L12 21L20 10L12 3Z"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linejoin="round"
+                                />
+
+                                <path
+                                    d="M4 10H20"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+
+                                <path
+                                    d="M8 10L12 21L16 10"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linejoin="round"
+                                />
+
+                            </svg>
+
+                        </span>
+
+                        <h3>
+                            RPG
+                        </h3>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- RACING -->
+                <a
+                    href="games.html?category=racing"
+                    class="category-card"
+                >
+
+                    <div class="category-content">
+
+                        <span class="category-icon racing-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                aria-hidden="true"
+                            >
+
+                                <path
+                                    d="M5 17L7 9H17L19 17"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+
+                                <path
+                                    d="M8 9L9.5 5H14.5L16 9"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+
+                                <circle
+                                    cx="8"
+                                    cy="17"
+                                    r="2"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+
+                                <circle
+                                    cx="16"
+                                    cy="17"
+                                    r="2"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+
+                            </svg>
+
+                        </span>
+
+                        <h3>
+                            Racing
+                        </h3>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- ADVENTURE -->
+                <a
+                    href="games.html?category=adventure"
+                    class="category-card"
+                >
+
+                    <div class="category-content">
+
+                        <span class="category-icon adventure-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                aria-hidden="true"
+                            >
+
+                                <path
+                                    d="M4 19L10 5L20 19L13 16L9 19L4 19Z"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linejoin="round"
+                                />
+
+                                <path
+                                    d="M10 5L13 16"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+
+                            </svg>
+
+                        </span>
+
+                        <h3>
+                            Adventure
+                        </h3>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- SPORTS -->
+                <a
+                    href="games.html?category=sports"
+                    class="category-card"
+                >
+
+                    <div class="category-content">
+
+                        <span class="category-icon sports-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                aria-hidden="true"
+                            >
+
+                                <circle
+                                    cx="12"
+                                    cy="12"
+                                    r="8"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+
+                                <path
+                                    d="M12 4V20M4 12H20"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+
+                                <path
+                                    d="M7 7L17 17M17 7L7 17"
+                                    stroke="currentColor"
+                                    stroke-width="1.5"
+                                    stroke-linecap="round"
+                                />
+
+                            </svg>
+
+                        </span>
+
+                        <h3>
+                            Sports
+                        </h3>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </a>
+
+
+                <!-- HORROR -->
+                <a
+                    href="games.html?category=horror"
+                    class="category-card"
+                >
+
+                    <div class="category-content">
+
+                        <span class="category-icon horror-icon">
+
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                aria-hidden="true"
+                            >
+
+                                <path
+                                    d="M12 3L19 6V11C19 16 15.5 19.5 12 21C8.5 19.5 5 16 5 11V6L12 3Z"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linejoin="round"
+                                />
+
+                                <path
+                                    d="M9 11L10.5 12.5L13 9.5L15 12"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+
+                            </svg>
+
+                        </span>
+
+                        <h3>
+                            Horror
+                        </h3>
+
+                    </div>
+
+                    <span class="category-arrow">
+                        →
+                    </span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRENDING -->
+        <section class="section trending">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        WHAT PLAYERS ARE BUYING
+                    </p>
+
+                    <h2>
+                        TRENDING NOW
+                    </h2>
+
+                </div>
+
+                <a
+                    href="games.html"
+                    class="view-all"
+                >
+                    VIEW ALL →
+                </a>
+
+            </div>
+
+
+            <div class="game-grid">
+
+
+                <!-- VELOCITY X -->
+                <article class="game-card">
+
+                    <div class="game-image game-image-4">
+
+                        <img
+                            src="velocity-x.JPEG"
+                            alt="Velocity X"
+                        >
+
+                        <span class="game-overlay">
+                            VIEW GAME
+                        </span>
+
+                    </div>
+
+                    <div class="game-info">
+
+                        <p class="game-category">
+                            RACING
+                        </p>
+
+                        <h3>
+                            Velocity X
+                        </h3>
+
+                        <p class="game-price">
+                            $14.99
+                        </p>
+
+                        <div class="game-rating">
+                            <span class="star">★</span>
+                            <span>4.6 (1.4K)</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- DARK DESCENT -->
+                <article class="game-card">
+
+                    <div class="game-image game-image-5">
+
+                        <img
+                            src="dark-descent.JPEG"
+                            alt="Dark Descent"
+                        >
+
+                        <span class="game-overlay">
+                            VIEW GAME
+                        </span>
+
+                    </div>
+
+                    <div class="game-info">
+
+                        <p class="game-category">
+                            HORROR
+                        </p>
+
+                        <h3>
+                            Dark Descent
+                        </h3>
+
+                        <p class="game-price">
+                            $13.99
+                        </p>
+
+                        <div class="game-rating">
+                            <span class="star">★</span>
+                            <span>4.5 (870)</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ULTIMATE FOOTBALL -->
+                <article class="game-card">
+
+                    <div class="game-image game-image-6">
+
+                        <img
+                            src="ultimate-football.JPEG"
+                            alt="Ultimate Football"
+                        >
+
+                        <span class="game-overlay">
+                            VIEW GAME
+                        </span>
+
+                    </div>
+
+                    <div class="game-info">
+
+                        <p class="game-category">
+                            SPORTS
+                        </p>
+
+                        <h3>
+                            Ultimate Football
+                        </h3>
+
+                        <p class="game-price">
+                            $11.99
+                        </p>
+
+                        <div class="game-rating">
+                            <span class="star">★</span>
+                            <span>4.4 (1.1K)</span>
+                        </div>
+                        
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- DEALS -->
+        <section
+            class="section deals"
+            id="deals"
+        >
+
+            <div class="deal-content">
+
+                <p class="section-label">
+                    LIMITED TIME
+                </p>
+
+                <h2>
+                    LEVEL UP<br>
+                    FOR LESS.
+                </h2>
+
+                <p>
+                    Grab selected titles at special prices before
+                    the deals disappear.
+                </p>
+
+                <a
+                    href="games.html"
+                    class="btn primary-btn"
+                >
+                    SHOP DEALS
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHY GAMEVAULT -->
+        <section class="section benefits">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        WHY GAMEVAULT
+                    </p>
+
+                    <h2>
+                        BUILT FOR GAMERS
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="benefit-grid">
+
+
+                <div class="benefit">
+
+                    <span>
+                        01
+                    </span>
+
+                    <h3>
+                        BIG LIBRARY
+                    </h3>
+
+                    <p>
+                        Discover games across multiple genres
+                        and platforms.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <span>
+                        02
+                    </span>
+
+                    <h3>
+                        SECURE CHECKOUT
+                    </h3>
+
+                    <p>
+                        A simple and secure purchasing experience.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <span>
+                        03
+                    </span>
+
+                    <h3>
+                        GAMER FIRST
+                    </h3>
+
+                    <p>
+                        Built around finding great games quickly
+                        without the clutter.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+
+            <div>
+
+                <a
+                    href="index.html"
+                    class="logo"
+                >
+                    GAME<span>VAULT</span>
+                </a>
+
+                <p>
+                    Your gateway to unforgettable gaming experiences.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    EXPLORE
+                </h4>
+
+                <a href="games.html">
+                    Games
+                </a>
+
+                <a href="games.html#explore-games">
+                    Categories
+                </a>
+
+                <a href="#deals">
+                    Deals
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    SUPPORT
+                </h4>
+
+                <a href="#">
+                    Contact
+                </a>
+
+                <a href="#">
+                    FAQ
+                </a>
+
+                <a href="#">
+                    Privacy
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 GAMEVAULT. ALL RIGHTS RESERVED.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
