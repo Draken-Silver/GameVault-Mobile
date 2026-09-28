@@ -12,7 +12,7 @@ const allGames = [
         name: "Shadow Protocol",
         price: 19.99,
         category: "ACTION",
-        image: "shadow-protocol.JPEG",
+        image: "shadow-protocol.jpeg",
         description:
             "Enter the shadows and take on high-risk missions in a world where every move matters."
     },
@@ -20,7 +20,7 @@ const allGames = [
         name: "Realm of Legends",
         price: 24.99,
         category: "RPG",
-        image: "realm-of-legends.JPEG",
+        image: "realm-of-legends.jpeg",
         description:
             "Build your hero, explore a legendary world and fight your way through powerful enemies."
     },
@@ -28,7 +28,7 @@ const allGames = [
         name: "Lost Horizon",
         price: 17.99,
         category: "ADVENTURE",
-        image: "lost-horizon.JPEG",
+        image: "lost-horizon.jpeg",
         description:
             "Explore an unknown world filled with danger, mystery and unforgettable discoveries."
     },
@@ -36,7 +36,7 @@ const allGames = [
         name: "Velocity X",
         price: 14.99,
         category: "RACING",
-        image: "velocity-x.JPEG",
+        image: "velocity-x.jpeg",
         description:
             "Push your limits, dominate the track and become the fastest driver in Velocity X."
     },
@@ -44,7 +44,7 @@ const allGames = [
         name: "Dark Descent",
         price: 13.99,
         category: "HORROR",
-        image: "dark-descent.JPEG",
+        image: "dark-descent.jpeg",
         description:
             "Descend into darkness and survive the terrifying threats waiting around every corner."
     },
@@ -52,7 +52,7 @@ const allGames = [
         name: "Ultimate Football",
         price: 11.99,
         category: "SPORTS",
-        image: "ultimate-football.JPEG",
+        image: "ultimate-football.jpeg",
         description:
             "Take control of your team, compete against the best and chase football glory."
     }
