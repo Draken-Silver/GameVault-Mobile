@@ -2689,7 +2689,7 @@ footer::after {
         padding-right: 4%;
 
         display: grid;
-        grid-template-columns: 40% 50% 10%;
+        grid-template-columns: 40% 48% 12%;
         align-items: center;
 
         gap: 0;
