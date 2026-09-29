@@ -6732,7 +6732,7 @@ footer::after {
     margin: 0;
 
     position: static;
-    transform: none;
+    transform: translateX(-8px);
 
     flex-shrink: 0;
     }
