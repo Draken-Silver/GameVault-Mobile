@@ -2180,3 +2180,10 @@ if (mobileMenuBtn && mobileMenu) {
         });
     });
 }
+
+window.addEventListener("resize", () => {
+    if (window.innerWidth > 800) {
+        mobileMenu.classList.remove("active");
+        mobileMenuBtn.setAttribute("aria-expanded", "false");
+    }
+});
