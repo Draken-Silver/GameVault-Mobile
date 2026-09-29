@@ -2155,3 +2155,28 @@ setInterval(() => {
     );
 
 }, 5000);
+
+// MOBILE MENU
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+if (mobileMenuBtn && mobileMenu) {
+    mobileMenuBtn.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.toggle("active");
+
+        mobileMenuBtn.setAttribute(
+            "aria-expanded",
+            isOpen ? "true" : "false"
+        );
+    });
+
+    mobileMenu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            mobileMenu.classList.remove("active");
+            mobileMenuBtn.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+        });
+    });
+}
