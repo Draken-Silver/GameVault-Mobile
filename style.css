@@ -6716,6 +6716,14 @@ footer::after {
     display: none;
 }
 
+.mobile-menu.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
 
 /* MOBILE */
 
