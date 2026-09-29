@@ -6663,9 +6663,7 @@ footer::after {
         gap: 18px;
     }
 
-    .nav-links {
-        display: none;
-    }
+
 
     .nav-actions {
         margin-left: auto;
