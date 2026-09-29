@@ -6713,7 +6713,7 @@ footer::after {
 }
 
 .mobile-menu {
-    display: none;
+    display: block;
 }
 
 
