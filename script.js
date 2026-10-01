@@ -75,6 +75,12 @@ const searchBtn =
 const searchResults =
     document.getElementById("searchResults");
 
+const isCartPage =
+    window.location.pathname
+        .toLowerCase()
+        .endsWith("cart.html");
+
+
 
 /* =========================
    CURRENCY
@@ -393,6 +399,146 @@ function performSearch() {
             .toLowerCase();
 
     searchResults.innerHTML = "";
+
+    if (isCartPage) {
+
+        if (!query) {
+
+            searchResults.classList.remove(
+                "active"
+            );
+
+            return;
+
+        }
+
+        const cartMatches =
+            cart.filter(item => {
+
+                const gameName =
+                    item.name.toLowerCase();
+
+                const gameData =
+                    allGames.find(
+                        game =>
+                            game.name ===
+                            item.name
+                    );
+
+                const category =
+                    gameData
+                        ? gameData.category.toLowerCase()
+                        : "";
+
+                return (
+                    gameName.includes(query) ||
+                    category.includes(query)
+                );
+
+            });
+
+        if (cartMatches.length === 0) {
+
+            searchResults.innerHTML = `
+
+                <div class="search-no-results">
+                    NO GAMES FOUND IN CART
+                </div>
+
+            `;
+
+            searchResults.classList.add(
+                "active"
+            );
+
+            return;
+
+        }
+
+        cartMatches.forEach(item => {
+
+            const gameData =
+                allGames.find(
+                    game =>
+                        game.name ===
+                        item.name
+                );
+
+            const result =
+                document.createElement(
+                    "div"
+                );
+
+            result.className =
+                "search-result-item";
+
+            result.innerHTML = `
+
+                <span>
+                    ${item.name}
+                </span>
+
+                <small>
+                    ${gameData
+                        ? gameData.category
+                        : "GAME"}
+                </small>
+
+            `;
+
+            result.addEventListener(
+                "click",
+                () => {
+
+                    searchResults.classList.remove(
+                        "active"
+                    );
+
+                    document
+                        .querySelectorAll(
+                            ".cart-item"
+                        )
+                        .forEach(card => {
+
+                            const title =
+                                card.querySelector(
+                                    ".cart-item-info h3"
+                                );
+
+                            if (
+                                title &&
+                                title.textContent
+                                    .trim()
+                                    .toLowerCase() ===
+                                    item.name
+                                        .toLowerCase()
+                            ) {
+
+                                card.scrollIntoView({
+                                    behavior: "smooth",
+                                    block: "center"
+                                });
+
+                            }
+
+                        });
+
+                }
+            );
+
+            searchResults.appendChild(
+                result
+            );
+
+        });
+
+        searchResults.classList.add(
+            "active"
+        );
+
+        return;
+
+    }
     
     if (!query) {
 
