@@ -722,6 +722,14 @@ if (searchBtn) {
                 return;
             }
 
+            if (isCartPage) {
+
+                performSearch();
+
+                return;
+
+            }
+
             const query =
                 searchInput.value
                     .trim()
