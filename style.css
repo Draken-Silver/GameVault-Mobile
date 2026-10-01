@@ -6826,4 +6826,26 @@ html,
 body {
     max-width: 100%;
      overflow-x: hidden;
-        }
+}
+
+        @media (max-width: 800px) {
+
+    .games-hero-visual {
+        left: 0;
+        right: 0;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(3,6,13,.96) 0%,
+                rgba(3,6,13,.82) 28%,
+                rgba(3,6,13,.55) 55%,
+                rgba(3,6,13,.35) 100%
+            ),
+            url("games-hero.png") center center / cover no-repeat;
+    }
+
+}
