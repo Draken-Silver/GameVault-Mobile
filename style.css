@@ -4246,6 +4246,11 @@ footer::after {
         height: 75px;
     }
 
+    .workstation-featured-art {
+        width: 140px;
+        height: 95px;
+    }
+
 
     .workstation-coffee {
         left: 0;
