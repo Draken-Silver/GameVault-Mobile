@@ -2844,21 +2844,7 @@ footer::after {
         width: 100%;
     }
 
-    .featured .game-grid,
-.trending .game-grid {
-    display: flex;
-    overflow-x: auto;
-    gap: 14px;
-    grid-template-columns: none;
-    scrollbar-width: none;
-}
-
-.featured .game-grid::-webkit-scrollbar,
-.trending .game-grid::-webkit-scrollbar {
-    display: none;
-}
-
-.featured .game-card,
+    .featured .game-card,
 .trending .game-card {
     flex: 0 0 62%;
 }
