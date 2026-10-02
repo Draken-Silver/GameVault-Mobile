@@ -2841,6 +2841,7 @@ footer::after {
     .trending .game-image {
         height: 150px;
         aspect-ratio: 1 / 1;
+        width: 100%;
     }
 
     .featured .game-card,
