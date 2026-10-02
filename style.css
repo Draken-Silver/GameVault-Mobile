@@ -2822,7 +2822,6 @@ footer::after {
     display: flex;
     gap: 14px;
     overflow-x: auto;
-    scrollbar-width: none;
 }
 
     .category-grid {
