@@ -2849,8 +2849,14 @@ footer::after {
     display: flex;
     overflow-x: auto;
     gap: 14px;
+
     grid-template-columns: none;
+
+    padding-left: 0;
+    padding-right: 20px;
+
     scrollbar-width: none;
+    scroll-behavior: smooth;
 }
 
 .featured .game-grid::-webkit-scrollbar,
