@@ -1507,32 +1507,32 @@ function renderCart() {
 
     if (cart.length === 0) {
 
-        cartItems.innerHTML = `
+        cartItem.innerHTML = `
 
-            <div class="empty-cart">
+    <div class="cart-item-info">
 
-                <p class="section-label">
-                    CART STATUS
-                </p>
+        <h3>
+            ${item.name}
+        </h3>
 
-                <h3>
-                    YOUR CART IS EMPTY.
-                </h3>
+        <p>
+            ${category}
+        </p>
 
-                <p>
-                    You haven't added any games yet.
-                </p>
+        <div class="cart-item-price">
+            ${displayPrice}
+        </div>
 
-                <a
-                    href="games.html"
-                    class="primary-btn"
-                >
-                    EXPLORE GAMES
-                </a>
+    </div>
 
-            </div>
+    <button
+        class="remove-cart-btn"
+        data-index="${index}"
+    >
+        REMOVE
+    </button>
 
-        `;
+`;
 
         updateCartSummary();
 
