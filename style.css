@@ -4220,6 +4220,9 @@ footer::after {
         bottom: 0;
     }
 
+    .cart-hero .hero-content {
+        transform: translateY(-35px);
+    }
 
     .workstation-monitor {
         top: 40px;
