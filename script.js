@@ -1532,8 +1532,7 @@ function renderCart() {
         REMOVE
     </button>
 
-`;
-
+`; 
         updateCartSummary();
 
         return;
