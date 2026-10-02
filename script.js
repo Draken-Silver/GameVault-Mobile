@@ -66,6 +66,9 @@ const allGames = [
 const currencySelector =
     document.getElementById("currencySelector");
 
+const mobileCurrencySelector =
+    document.getElementById("mobileCurrencySelector");
+
 const searchInput =
     document.getElementById("gameSearch");
 
@@ -322,45 +325,52 @@ function updatePrices() {
 ========================= */
 
 if (currencySelector) {
-
-    const savedCurrency =
-        localStorage.getItem(
-            "gameVaultCurrency"
-        );
+    const savedCurrency = localStorage.getItem("gameVaultCurrency");
 
     if (savedCurrency) {
-
-        currencySelector.value =
-            savedCurrency;
-
+        currencySelector.value = savedCurrency;
     }
 
-    currencySelector.addEventListener(
-        "change",
-        () => {
+    currencySelector.addEventListener("change", () => {
+        localStorage.setItem("gameVaultCurrency", currencySelector.value);
 
-            localStorage.setItem(
-                "gameVaultCurrency",
-                currencySelector.value
-            );
-
-            updatePrices();
-
-            updateCartSummary();
-
-            updateCheckoutSummary();
-
-            updateCheckoutTotal();
-
-            renderCheckout();
-
-            renderGameDetails();
-
+        if (mobileCurrencySelector) {
+            mobileCurrencySelector.value = currencySelector.value;
         }
-    );
 
+        updatePrices();
+        updateCartSummary();
+        updateCheckoutSummary();
+        updateCheckoutTotal();
+        renderCheckout();
+        renderGameDetails();
+    });
 }
 
+if (mobileCurrencySelector) {
+    const savedCurrency = localStorage.getItem("gameVaultCurrency");
+
+    if (savedCurrency) {
+        mobileCurrencySelector.value = savedCurrency;
+    }
+
+    mobileCurrencySelector.addEventListener("change", () => {
+        const selectedCurrency = mobileCurrencySelector.value;
+
+        localStorage.setItem("gameVaultCurrency", selectedCurrency);
+
+        if (currencySelector) {
+            currencySelector.value = selectedCurrency;
+        }
+
+        updatePrices();
+        updateCartSummary();
+        updateCheckoutSummary();
+        updateCheckoutTotal();
+        renderCheckout();
+        renderGameDetails();
+    });
+}
 
 /* =========================
    SEARCH
