@@ -2845,7 +2845,7 @@ footer::after {
 
     .featured .game-card,
 .trending .game-card {
-    flex: 0 0 62%;
+    flex: 0 0 48%;
 }
 
 
