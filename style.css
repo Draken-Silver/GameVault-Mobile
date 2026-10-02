@@ -4257,6 +4257,10 @@ footer::after {
         transform-origin: bottom left;
     }
 
+    .workstation-desk {
+        bottom: 0;
+    }
+
 }
 
 /* =========================
