@@ -2818,13 +2818,12 @@ footer::after {
     /* GRIDS */
 
     .featured .game-grid,
-    .trending .game-grid,
-    .game-grid {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-
-        gap: 14px;
-    }
+.trending .game-grid {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
 
     .category-grid {
         grid-template-columns:
@@ -2840,7 +2839,7 @@ footer::after {
 
     .featured .game-image,
     .trending .game-image {
-        height: 180px;
+        height: 145px;
     }
 
 
