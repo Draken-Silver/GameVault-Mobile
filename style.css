@@ -7045,12 +7045,12 @@ body {
 @media (max-width: 800px) {
 
     .checkout-gateway {
-        right: -18%;
-        top: 64%;
-        width: 72%;
-        height: 65%;
-        transform: translateY(-50%) scale(0.78);
-        transform-origin: center right;
+        right: 50%;
+        top: 78%;
+        width: 80%;
+        height: 55%;
+        transform: translate(50%, -35%) scale(0.72);
+        transform-origin: center center;
     }
 
 }
