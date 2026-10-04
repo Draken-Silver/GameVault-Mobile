@@ -7146,34 +7146,42 @@ body {
 
 .game-details-page .game-details-info .game-category {
     position: absolute;
-    top: -14px;
-    left: 18px;
+    top: -18px;
+    left: 14px;
     z-index: 5;
 
     margin: 0;
-    padding: 7px 16px;
+    padding: 8px 18px;
 
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 900;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
 
     color: #fff;
 
-    background: rgba(5, 8, 18, 0.95);
+    background:
+        linear-gradient(
+            105deg,
+            rgba(184,34,255,.95),
+            rgba(124,58,237,.92),
+            rgba(0,198,255,.9)
+        );
 
-    border: 1px solid transparent;
-    border-radius: 6px;
+    border: none;
+    border-radius: 3px;
 
-    background-image:
-        linear-gradient(rgba(5, 8, 18, 0.95), rgba(5, 8, 18, 0.95)),
-        linear-gradient(90deg, #b822ff, #7c3aed, #00c6ff);
-
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
+    transform: skewX(-8deg);
 
     box-shadow:
-        0 0 10px rgba(184, 34, 255, 0.3),
-        0 0 16px rgba(0, 198, 255, 0.12);
+        0 0 10px rgba(184,34,255,.4),
+        0 0 20px rgba(0,198,255,.15);
 }
 
+.game-details-page .game-details-info .game-category::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    border: 1px solid rgba(255,255,255,.25);
+    pointer-events: none;
+}
 }
