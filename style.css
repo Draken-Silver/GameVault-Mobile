@@ -2825,14 +2825,30 @@ footer::after {
 }
 
     .category-grid {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-    }
+    grid-template-columns:repeat(2,minmax(0,1fr));
+}
 
-    .benefit-grid {
-        grid-template-columns: 1fr;
-    }
+.benefit-grid {
+    grid-template-columns:1fr;
+}
 
+/* MOBILE GAMES CATALOGUE */
+.game-grid {
+    display:flex;
+    gap:14px;
+    overflow-x:auto;
+    padding-bottom:12px;
+}
+
+.game-grid .game-card {
+    flex:0 0 62%;
+}
+
+.game-grid .game-image {
+    height:150px;
+    aspect-ratio:1 / 1;
+    width:100%;
+}
 
     /* GAME IMAGES */
 
