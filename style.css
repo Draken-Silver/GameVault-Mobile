@@ -7146,7 +7146,7 @@ body {
 
 .game-details-page .game-details-info .game-category {
     position: absolute;
-    top: -18px;
+    top: -10px;
     left: 10px;
     z-index: 5;
 
