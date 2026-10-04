@@ -7140,4 +7140,40 @@ body {
         text-align: center;
     }
 
+    .game-details-page .game-details {
+    position: relative;
+}
+
+.game-details-page .game-details-info .game-category {
+    position: absolute;
+    top: -14px;
+    left: 18px;
+    z-index: 5;
+
+    margin: 0;
+    padding: 7px 16px;
+
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 3px;
+
+    color: #fff;
+
+    background: rgba(5, 8, 18, 0.95);
+
+    border: 1px solid transparent;
+    border-radius: 6px;
+
+    background-image:
+        linear-gradient(rgba(5, 8, 18, 0.95), rgba(5, 8, 18, 0.95)),
+        linear-gradient(90deg, #b822ff, #7c3aed, #00c6ff);
+
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+
+    box-shadow:
+        0 0 10px rgba(184, 34, 255, 0.3),
+        0 0 16px rgba(0, 198, 255, 0.12);
+}
+
 }
