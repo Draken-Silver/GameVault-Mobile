@@ -7061,4 +7061,24 @@ body {
         display: none;
     }
 
+    .game-details-page .nav-actions {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+
+    .game-details-page .mobile-menu-btn {
+        order: 2;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .game-details-page .cart-btn {
+        order: 1;
+    }
+
 }
